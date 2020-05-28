@@ -5,16 +5,16 @@
   collections:
     - jeroenvandelockand.loginmsg
   tasks:
-  - name: Add pre-login banner with fqdn
+  - name: put a logon message before logging in
     loginmsg:
-      text: This should go in /etc/issue with fqdn
+      text: Hello, you are entering a Hackathon Machine!
       when: before
       fqdn: True
       state: present
 
-  - name: Add login banner without fqdn
+  - name: put a logon message after logging in
     loginmsg:
-      text: This should go in /etc/motd without fqdn
+      text: Hi there, welcome in a Hackathon Machine!
       when: after
       fqdn: False
       state: present
