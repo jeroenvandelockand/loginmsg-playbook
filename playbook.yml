@@ -18,5 +18,3 @@
       when: after
       fqdn: False
       state: present
-
-...
