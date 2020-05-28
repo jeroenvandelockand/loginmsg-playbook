@@ -1,6 +1,5 @@
 ---
-- name: set up login messages
-  hosts: all
+- hosts: all
   collections:
    - jeroenvandelockand.loginmsg
   become: yes
