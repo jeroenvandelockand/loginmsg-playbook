@@ -1,8 +1,8 @@
 ---
 - name: set up login messages
   hosts: all
-  collections:
-    - jeroenvandelockand.loginmsg
+  collections:
+   - jeroenvandelockand.loginmsg
   become: yes
   tasks:
   - name: put a logon message before logging in
