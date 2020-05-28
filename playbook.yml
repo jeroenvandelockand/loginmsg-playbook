@@ -5,18 +5,18 @@
   collections:
     - jeroenvandelockand.loginmsg
   tasks:
-    - name: Add pre-login banner with fqdn
-      loginmsg:
-        text: This should go in /etc/issue with fqdn
-        when: before
-        fqdn: True
-        state: present
+  - name: Add pre-login banner with fqdn
+    loginmsg:
+      text: This should go in /etc/issue with fqdn
+      when: before
+      fqdn: True
+      state: present
 
-    - name: Add login banner without fqdn
-      loginmsg:
-        text: This should go in /etc/motd without fqdn
-        when: after
-        fqdn: False
-        state: present
+  - name: Add login banner without fqdn
+    loginmsg:
+      text: This should go in /etc/motd without fqdn
+      when: after
+      fqdn: False
+      state: present
 
 ...
